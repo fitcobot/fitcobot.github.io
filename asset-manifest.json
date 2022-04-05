@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fitcobot/fitcobot.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/fitcobot/fitcobot.github.io/static/js/main.ac034575.js",
-    "static/js/787.d6cb1aba.chunk.js": "/fitcobot/fitcobot.github.io/static/js/787.d6cb1aba.chunk.js",
-    "static/media/logo.svg": "/fitcobot/fitcobot.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/fitcobot/fitcobot.github.io/index.html",
-    "main.073c9b0a.css.map": "/fitcobot/fitcobot.github.io/static/css/main.073c9b0a.css.map",
-    "main.ac034575.js.map": "/fitcobot/fitcobot.github.io/static/js/main.ac034575.js.map",
-    "787.d6cb1aba.chunk.js.map": "/fitcobot/fitcobot.github.io/static/js/787.d6cb1aba.chunk.js.map"
+    "main.css": "/fitcobot/static/css/main.073c9b0a.css",
+    "main.js": "/fitcobot/static/js/main.c19c5571.js",
+    "static/js/787.d6cb1aba.chunk.js": "/fitcobot/static/js/787.d6cb1aba.chunk.js",
+    "static/media/logo.svg": "/fitcobot/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fitcobot/index.html",
+    "main.073c9b0a.css.map": "/fitcobot/static/css/main.073c9b0a.css.map",
+    "main.c19c5571.js.map": "/fitcobot/static/js/main.c19c5571.js.map",
+    "787.d6cb1aba.chunk.js.map": "/fitcobot/static/js/787.d6cb1aba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ac034575.js"
+    "static/js/main.c19c5571.js"
   ]
 }
