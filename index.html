@@ -34,17 +34,12 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
 
 <body>
   <div class="main_layout" lang="en">
-    <div class="header_container">
-      <div class="general_side_bar">
-
-      </div>
-    </div>
     <div class="container">
       <div id="cobottitle" class="title">COBOT
       </div>
-      <div>
-        <small>The purpose of the COBOT capstone project is to develop a user-friendly, accessible robot system to aid
-          any person in performing everyday tasks.</small>
+      <h2>Spring 2022</h2>
+      <div class="section">
+        <small>User-friendly, accessible robot system for assistance in performing everyday tasks.</small>
       </div>
 
 
@@ -55,35 +50,99 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
         <div ><p>BOX3</p></div>
         <div ><p>BOX4</p></div>
       </div> -->
-      <div id="myModal" class="modal">
-
+      <div id="arm_assembly_modal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <p>The arm assembly took place according to the instructions provided by Chris Annin's robot kit.</p>
+          <span id="arm_assembly_modal_span" class="close">&times;</span>
+          <img width="50%" src="./images/claw.jpg"></img>
+          <img width="50%" src="./images/cobot1.jpg"></img>
+          <img width="50%" src="./images/cobot2.jpg"></img>
+          <img width="50%" src="./images/cobot4.jpg"></img>
         </div>
-      
+        
       </div>
+
+      <div id="ros2_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="ros2_modal_span" class="close">&times;</span>
+          <p>The ROS2 system is what controls the COBOT. It is hosted on a Linux laptop that is connected to the COBOT inside of the power box (shown below).</p>
+          <img src="./images/SystemDiagram.png"></img>
+          <img src="./images/SystemDiagram2.png"></img>
+          <img src="./images/rviz.png"></img>
+        </div>
+      </div>
+
+      <div id="speech_recognition_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="speech_recognition_modal_span" class="close">&times;</span>
+          <div id="speech_recognition" class="contact speech_recognition">
+            <h1>Speech Recognition </h1>
+            <p>The COBOT utilizes speech recognition for detecting when a user would like to pick up a can using "" and signalling the ROS2 system to take the appropriate action. </p>
+            <img width="50%" src="./images/SpeechRecognitionFlowchart.png"></img>
+    
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="emg_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="emg_modal_span" class="close">&times;</span>
+
+          <h1>EMG</h1>
+          <p>The EMG subsystem will make use of an EMG sensor to partially control the COBOT system using one's own muscles. </p>
+        </div>
+      </div>
+
+      <div id="visual_recognition_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="visual_recognition_modal_span" class="close">&times;</span>
+          <div id="visual_recognition" class="contact visual_recognition">
+            <h1>Visual Recognition </h1>
+            <p>
+    
+              The main goal of the Visual Recognition system is to have the COBOT  be able to detect hand gestures (principally stop, thumbs up, and thumbs down) 
+              In addition, this subsystem will have the COBOT be able to detect objects visually so that it can pick them up.
+            </p>
+    
+            <b>Technologies</b>
+    
+            <p>LabelStudio, Python, YOLOV4 Tiny, Google Colab, Pico Flexx, Pico Flexx Python SDK, C++, Darknet, Make</p>
+    
+            <b>Python Libraries</b>
+    
+            <p>OpenCV, Matplotlib, Darknet interface libraries</p>
+            <img width="50%" src="./images/VisualRecognitionFlowchart1.png"></img>
+          </div>
+          
+        </div>
+      </div>
+
+
       
 
       <div class="box_container2">
-        <div  style="background-repeat: no-repeat; background-image:       linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(./images/cobot1.jpg);" class="box"><div><div>Arm Assembly</div></div></div>
-        <div id="ros2" style="background-repeat: no-repeat; background-image:       linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(./images/rviz.png);" class="box"><div><div>ROS2</div></div></div>
-        <div  style="background-repeat: no-repeat; background-image:       linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Speech Recognition</div></div></div>        
-        <div  style="background-repeat: no-repeat; background-image:       linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>EMG</div></div></div>
-        <div  style="background-repeat: no-repeat; background-image:       linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(./images/VisualRecognitionFlowchart1.png);" class="box"><div><div>Visual Recognition</div></div></div>
+        <div id="arm_assembly_btn" class="box arm_assembly_btn"><div><div>Arm Assembly</div></div></div>
+        <div id="ros2_btn" class="box ros2_btn"><div><div>ROS2</div></div></div>
+        <div id="speech_recognition_btn" class="box speech_recognition_btn"><div><div>Speech Recognition</div></div></div>        
+        <div id="emg_btn" class="box emg_btn"><div><div>EMG</div></div></div>
+        <div id="visual_recognition_btn"  class="box visual_recognition_btn"><div><div>Visual Recognition</div></div></div>
         <!-- <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Gallery</div></div></div>
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>About Us</div></div></div>
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Contact</div></div></div> -->
       </div>
       <div id="AR3 Arm" class="contact">
-        <h2>Fall 2022</h2>
+        
       </div>
-
-      <img src="./images/SystemDiagram.png"></img>
-      <img src="./images/SystemDiagram2.png"></img>
-      <img width="50%" src="./images/claw.jpg"></img>
-      <img src="./images/rviz.png"></img>
+<!-- 
+      
+      
+      
       <div id="AR3 Arm" class="contact">
         <h1>AR3 Cobot Arm</h1>
       </div>
@@ -93,44 +152,21 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
       <div id="EMG" class="contact">
         <h1>EMG</h1>
       </div>
-
-      <div id="speech_recognition" class="contact speech_recognition">
-        <h1>Speech Recognition </h1>
-        <p>A natural solution for an easy-to-use user interface for issuing commands to the robot is speech recognition.
-          The initial goal was therefore to use speech recognition to identify and then execute multiple possible
-          commands.</p>
-        <img width="50%" src="./images/SpeechRecognitionFlowchart.png"></img>
-
-        <div id="visual_recognition" class="contact visual_recognition">
-          <h1>Visual Recognition </h1>
-          <p>
-
-            To be able to detect hand gestures (principally stop, thumbs up, and thumbs down) in order to signal to the
-            COBOT system that an action should be taken, a visual recognition subsystem is needed.
-            In addition, this subsystem will have the COBOT be able to detect objects so that it can pick them up.
-          </p>
-
-          <b>Technologies</b>
-
-          <p>LabelStudio, Python, YOLOV4 Tiny, Google Colab, Pico Flexx, Pico Flexx Python SDK, C++, Darknet, Make</p>
-
-          <b>Python Libraries</b>
-
-          <p>OpenCV, Matplotlib, Darknet interface libraries</p>
-          <img width="50%" src="./images/VisualRecognitionFlowchart1.png"></img>
-        </div>
+ -->
 
 
-      </div>
+
+
+
       <div id="about_us" class="about_us_wrapper">
-        <h1>About Us</h1>
+        <!-- <h1>About Us</h1> -->
         <div class="about_us">
-          <div id="nn" class="profile_card">
+          <div id="" class="profile_card">
             <div class="name_title">
               <h3>Wilner Viana</h3>
             </div>
             <div class="profile_picture">
-              <img height="100px"></img>
+              <img src="images/wilner.png"height="100px"></img>
             </div>
 
             <div class="bio_plus_web_links">
