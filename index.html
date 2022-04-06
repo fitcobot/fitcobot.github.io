@@ -14,13 +14,13 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Florida Tech COBOT 2022</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="description" content="The webpage for Florida Tech's 2022 COBOT project">
   <meta name="author" content="SitePoint">
 
-  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:title" content="Florida Tech COBOT 2022">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:description" content="The webpage for Florida Tech's 2022 COBOT project">
   <meta property="og:image" content="image.png">
 
   <link rel="icon" href="/favicon.ico">
@@ -60,14 +60,15 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <img width="50%" src="./images/cobot2.jpg"></img>
           <img width="50%" src="./images/cobot4.jpg"></img>
         </div>
-        
+
       </div>
 
       <div id="ros2_modal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
           <span id="ros2_modal_span" class="close">&times;</span>
-          <p>The ROS2 system is what controls the COBOT. It is hosted on a Linux laptop that is connected to the COBOT inside of the power box (shown below).</p>
+          <p>The ROS2 system is what controls the COBOT. It is hosted on a Linux laptop that is connected to the COBOT
+            inside of the power box (shown below).</p>
           <img src="./images/SystemDiagram.png"></img>
           <img src="./images/SystemDiagram2.png"></img>
           <img src="./images/rviz.png"></img>
@@ -80,10 +81,11 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <span id="speech_recognition_modal_span" class="close">&times;</span>
           <div id="speech_recognition" class="contact speech_recognition">
             <h1>Speech Recognition </h1>
-            <p>The COBOT utilizes speech recognition for detecting when a user would like to pick up a can using "" and signalling the ROS2 system to take the appropriate action. </p>
+            <p>The COBOT utilizes speech recognition for detecting when a user would like to pick up a can using "" and
+              signalling the ROS2 system to take the appropriate action. </p>
             <img width="50%" src="./images/SpeechRecognitionFlowchart.png"></img>
-    
-    
+
+
           </div>
         </div>
       </div>
@@ -94,7 +96,8 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <span id="emg_modal_span" class="close">&times;</span>
 
           <h1>EMG</h1>
-          <p>The EMG subsystem will make use of an EMG sensor to partially control the COBOT system using one's own muscles. </p>
+          <p>The EMG subsystem will make use of an EMG sensor to partially control the COBOT system using one's own
+            muscles. </p>
         </div>
       </div>
 
@@ -105,41 +108,63 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <div id="visual_recognition" class="contact visual_recognition">
             <h1>Visual Recognition </h1>
             <p>
-    
-              The main goal of the Visual Recognition system is to have the COBOT  be able to detect hand gestures (principally stop, thumbs up, and thumbs down) 
-              In addition, this subsystem will have the COBOT be able to detect objects visually so that it can pick them up.
+
+              The main goal of the Visual Recognition system is to have the COBOT be able to detect hand gestures
+              (principally stop, thumbs up, and thumbs down)
+              In addition, this subsystem will have the COBOT be able to detect objects visually so that it can pick
+              them up.
             </p>
-    
+
             <b>Technologies</b>
-    
+
             <p>LabelStudio, Python, YOLOV4 Tiny, Google Colab, Pico Flexx, Pico Flexx Python SDK, C++, Darknet, Make</p>
-    
+
             <b>Python Libraries</b>
-    
+
             <p>OpenCV, Matplotlib, Darknet interface libraries</p>
             <img width="50%" src="./images/VisualRecognitionFlowchart1.png"></img>
           </div>
-          
+
         </div>
       </div>
 
 
-      
+
 
       <div class="box_container2">
-        <div id="arm_assembly_btn" class="box arm_assembly_btn"><div><div>Arm Assembly</div></div></div>
-        <div id="ros2_btn" class="box ros2_btn"><div><div>ROS2</div></div></div>
-        <div id="speech_recognition_btn" class="box speech_recognition_btn"><div><div>Speech Recognition</div></div></div>        
-        <div id="emg_btn" class="box emg_btn"><div><div>EMG</div></div></div>
-        <div id="visual_recognition_btn"  class="box visual_recognition_btn"><div><div>Visual Recognition</div></div></div>
+        <div id="arm_assembly_btn" class="box arm_assembly_btn">
+          <div>
+            <div>Arm Assembly</div>
+          </div>
+        </div>
+        <div id="ros2_btn" class="box ros2_btn">
+          <div>
+            <div>ROS2</div>
+          </div>
+        </div>
+        <div id="speech_recognition_btn" class="box speech_recognition_btn">
+          <div>
+            <div>Speech Recognition</div>
+          </div>
+        </div>
+        <div id="emg_btn" class="box emg_btn">
+          <div>
+            <div>EMG</div>
+          </div>
+        </div>
+        <div id="visual_recognition_btn" class="box visual_recognition_btn">
+          <div>
+            <div>Visual Recognition</div>
+          </div>
+        </div>
         <!-- <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Gallery</div></div></div>
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>About Us</div></div></div>
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Contact</div></div></div> -->
       </div>
       <div id="AR3 Arm" class="contact">
-        
+
       </div>
-<!-- 
+      <!-- 
       
       
       
@@ -159,14 +184,11 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
 
 
       <div id="about_us" class="about_us_wrapper">
-        <!-- <h1>About Us</h1> -->
+        <h1>About Us</h1>
         <div class="about_us">
           <div id="" class="profile_card">
-            <div class="name_title">
-              <h3>Wilner Viana</h3>
-            </div>
             <div class="profile_picture">
-              <img src="images/wilner.png"height="100px"></img>
+              <img src="images/wilner.png" height="100px"></img>
             </div>
 
             <div class="bio_plus_web_links">
@@ -185,11 +207,289 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
             </div>
 
             <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Wilner Viana</h3>
+              </div>
               <h4>Engineer at Thales</h4>
               <h4>Electrical Engineering 2022</h4>
             </div>
           </div>
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/daniel.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Daniel Wall</h3>
+              </div>
+              <h4>Software Engineer at Wabtec</h4>
+              <h4>Computer Engineering 2022</h4>
+            </div>
+          </div>
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/wilner.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Jacob Overberg</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+          
+          
+
+          
         </div>
+
+        <div class="about_us">
+
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/wilner.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Thomas Muller</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/andrew.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Andrew Neal</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/wilner.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>John Farrel</h3>
+              </div>
+              <h4>Engineer at </h4>
+              <h4>Computer Engineering 2022</h4>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <div class="about_us">
+
+
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/chris.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Chris Bonomi</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/ben.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>Ben Luchterhand</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+          <div id="" class="profile_card">
+            <div class="profile_picture">
+              <img src="images/wilner.png" height="100px"></img>
+            </div>
+
+            <div class="bio_plus_web_links">
+              <h2>Bio</h2>
+              Welcome! This project was created for so and so. Please find my résumé linked below.
+              <div class="horizontal_center_flex">
+                <div class="web_links_splash">
+                  <h2>Web Links</h2>
+                  <div class="web_links_img">
+                    <!-- <img onclick={() => { redirect("https://github.com/Nandith-Narayan") }} src={github_logo} ></img>
+                    <img onclick={() => { redirect("https://www.linkedin.com/in/nandith-narayan-553084202/") }} src={linked_in_logo} ></img> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic_profile_credentials">
+              <div class="name_title">
+                <h3>David Nieves-Acaron</h3>
+              </div>
+              <h4>Engineer at Thales</h4>
+              <h4>Electrical Engineering 2022</h4>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        <div class="about_us">
+
+
+
+
+        </div>
+
+
+        
       </div>
     </div>
 
@@ -199,7 +499,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
     <div class="footer_container">
       <div class="contact">
         <div class="attributions">
-          <h1 id="contact" >Contact </h1>
+          <h1 id="contact">Contact </h1>
           <p>ResumeCoin@gmail.com </p>
           <h3>Attributions</h3>
           <p>We would like to credit the original developer of the AR3...</p>
