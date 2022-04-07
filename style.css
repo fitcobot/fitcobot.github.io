@@ -27,7 +27,7 @@ background: #555;
 
 :root
 {
---profile-border: 5px solid white;
+--profile-border: 5px solid var(--dark-contrast-text-color);
 --dark-contrast-text-color: rgba(100,100,100,0.8);
 --general_button-color: white;
 --gradient-top-color: black;
@@ -38,7 +38,7 @@ background: #555;
 --speech_rec_bacg : red;
 --emg_bacg: red;
 --visual_rec_bacg : red;
-
+--button-gradient: linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0))
 
 }
 
@@ -213,6 +213,7 @@ align-items: center;
 
 .container
 {
+  background-image: ;
 align-content: center;
 margin: 0px;
 align-items: center;
@@ -278,8 +279,8 @@ margin: 5px;
 width: fit-content;
 background-color: transparent;
 border-radius: 30px;
-border: 1px solid white;
-color: white;
+border: 1px solid var(--dark-contrast-text-color);
+color: var(--dark-contrast-text-color);
 order: 5;
 padding: 5px;
 transition: 0.1s ease-in background-color;
@@ -346,7 +347,7 @@ column-gap: 1em;
 .button_container .general_button:active
 {
 background: var(--dark-contrast-text-color);
-color: white;
+color: var(--dark-contrast-text-color);
 }
 
 
@@ -406,7 +407,7 @@ width: 80%;
 
 .web_links_splash img,svg
 {
-background-color: white;
+background-color: var(--dark-contrast-text-color);
 
 max-width:  40px;
 max-height: 40px;
@@ -517,7 +518,7 @@ margin-left: 10%;
 
 #target {
 align-items: center;
-opacity: 0;
+opacity: 1;
 transform: translateY(100%);
 transition: opacity 1s ease-in-out,
             transform 1s ease-in-out;
@@ -530,20 +531,6 @@ opacity: 1;
 transform: none;
 }
 
-#tokenomics {
-  align-items: center;
-opacity: 0;
-transform: translateY(100%);
-transition: opacity 1s ease-in-out,
-            transform 1s ease-in-out;
-}
-
-/* Apply this class when #target enters/leaves the viewport */
-
-#tokenomics.target-is-active {
-opacity: 1;
-transform: none;
-}
 
 #nn {
   align-items: center;
@@ -604,11 +591,11 @@ transform: none;
 {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fill, min-content )
 }
 .box_container div
 {
-    color: white;
+    color: var(--dark-contrast-text-color);
     background-color: #555;
     height: 0;
     padding-bottom: 25%;
@@ -639,6 +626,7 @@ transform: none;
     width:50%; padding-bottom:50%;
 
 }
+
 .box > div
 {
     position:absolute; top:0;
@@ -661,11 +649,11 @@ transform: none;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 5%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 90%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     transition: display 1s ease-in;
@@ -680,6 +668,67 @@ transform: none;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 80%;
   }
 
+.arm_assembly_btn
+{
+  background-repeat: no-repeat;
+  background-image:       var(--button-gradient), url(./images/cobot1.jpg);
+}
+.ros2_btn
+{
+  background-repeat: no-repeat;
+  background-image:       var(--button-gradient), url(./images/rviz.png);
+}
+.speech_recognition_btn
+{
+  background-repeat: no-repeat;
+  background-image:       var(--button-gradient), url(./images/SpeechRecognitionFlowchart.png);
+}
+.emg_btn
+{
+  background-repeat: no-repeat;
+  background-image:       var(--button-gradient), url(./images/SpeechRecognitionFlowchart.png);
+}
+.visual_recognition_btn
+{
+  background-repeat: no-repeat;
+  background-image:       var(--button-gradient), url(./images/VisualRecognitionFlowchart1.png);
+}
+
+
+
+
+
+
+
+.section
+{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+
+
+.arm_assembly_btn:hover
+{
+  background-image:       var(--button-gradient-darker), url(./images/cobot1.jpg);
+}
+.ros2_btn:hover
+{
+  background-image:       var(--button-gradient-darker), url(./images/rviz.png);
+}
+.speech_recognition_btn:hover
+{
+  background-image:       var(--button-gradient-darker), url(./images/SpeechRecognitionFlowchart.png);
+}
+.emg_btn:hover
+{
+  background-image:       var(--button-gradient-darker), url(./images/SpeechRecognitionFlowchart.png);
+}
+.visual_recognition_btn:hover
+{
+  background-image:       var(--button-gradient-darker), url(./images/VisualRecognitionFlowchart1.png);
+}
