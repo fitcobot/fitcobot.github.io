@@ -375,11 +375,12 @@ align-items: center;
 
 .bio_plus_web_links
 {
+  height: 50%;
 padding-left: 50px;
 border-radius: 0px;
 border-left: var(--profile-border);
 border-bottom-left-radius: 10px;
-display: flex;
+display: none;
 text-align: left;
 flex-direction: column;
 justify-content: flex-start;
@@ -624,6 +625,7 @@ transform: none;
     background-color: #555;
     height: 0;
     width:50%; padding-bottom:50%;
+    transition: background 1s ease-in;
 
 }
 
@@ -711,7 +713,14 @@ transform: none;
 }
 
 
+.box:hover
+{
+  background-position-y: center;
+  background-size: 350%;
+  
+}
 
+/* 
 .arm_assembly_btn:hover
 {
   background-image:       var(--button-gradient-darker), url(./images/cobot1.jpg);
@@ -731,4 +740,4 @@ transform: none;
 .visual_recognition_btn:hover
 {
   background-image:       var(--button-gradient-darker), url(./images/VisualRecognitionFlowchart1.png);
-}
+} */
