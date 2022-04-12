@@ -157,9 +157,11 @@ font-size: 1.4em;
 .basic_profile_credentials
 {
 border-top: var(--profile-border);
+border-bottom: var(--profile-border);
 
 border-radius: 0px;
 border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
 text-align: center;
 flex-direction: column;
 height: auto;
