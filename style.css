@@ -27,7 +27,7 @@ background: #555;
 
 :root
 {
---profile-border: 5px solid var(--dark-contrast-text-color);
+--profile-border: 0.3vw solid var(--dark-contrast-text-color);
 --dark-contrast-text-color: rgba(100,100,100,0.8);
 --general_button-color: white;
 --gradient-top-color: black;
@@ -107,8 +107,10 @@ font-family: Geneva; */
 
 .about_us
 {
+font-size: 1vw;
 color: var(--dark-contrast-text-color);
-width: 100%;
+width: 85%;
+/* padding: 10%; */
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -118,25 +120,18 @@ column-gap: 50px;
 
 .about_us_wrapper
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 100%;
+max-width: 100%;
 margin-bottom: var(--intra-section-border);
 }
 
-.profile_card
-{
 
-}
-
-.profile_card * 
-{
-
-
-border-radius: 10px;
-padding: 10px;
-}
 
 .name_title
 {
-
 grid-column-start: 1;
 grid-column-end: 4;
 grid-row-start: 1;
@@ -146,6 +141,7 @@ height: 30px;
 display: flex;
 flex-direction: row;
 align-items: center;
+margin: 5%;
 
 }
 .name_title p
@@ -175,7 +171,7 @@ padding: 10px;
 border-radius: 10px;
 background-color: transparent;
 height: auto;
-width: 500px;
+width: 25%;
 display: grid;
 
 grid-template-columns: repeat(2, 1fr);  
@@ -215,7 +211,7 @@ align-items: center;
 
 .container
 {
-  background-image: ;
+    
 align-content: center;
 margin: 0px;
 align-items: center;
@@ -225,6 +221,7 @@ align-items: center;
 .container
 {
 text-align: center;
+
 }
 
 
@@ -625,7 +622,9 @@ transform: none;
     color: white;
     background-size:cover;
     background-color: #555;
+    font-size: 1vw;
     height: 0;
+    ;
     width:50%; padding-bottom:50%;
     transition: background 1s ease-in;
 
@@ -650,7 +649,7 @@ transform: none;
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: "block"; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 5%; /* Location of the box */
@@ -660,7 +659,8 @@ transform: none;
     height: 90%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    transition: background-color 1s ease-in;
+    visibility: hidden;
+    transition: visibility 1s ease opacity 1s ease;
   }
 
 
@@ -670,7 +670,6 @@ transform: none;
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
     width: 80%;
@@ -722,8 +721,12 @@ transform: none;
   
 }
 
+<<<<<<< HEAD
 /* 
 .arm_assembly_btn:hover
+=======
+/* .arm_assembly_btn:hover
+>>>>>>> 73be79606f8d942aad4bc2cdfe4b1a9a1a4aa653
 {
   background-image:       var(--button-gradient-darker), url(./images/cobot1.jpg);
 }
@@ -742,4 +745,29 @@ transform: none;
 .visual_recognition_btn:hover
 {
   background-image:       var(--button-gradient-darker), url(./images/VisualRecognitionFlowchart1.png);
+<<<<<<< HEAD
 } */
+=======
+} */
+
+
+.modal img
+{
+    max-width: 100%;
+}
+
+.modal_header
+{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height: 25vh;
+    width: 100%;
+    border-radius: 10px;
+
+}
+>>>>>>> 73be79606f8d942aad4bc2cdfe4b1a9a1a4aa653
