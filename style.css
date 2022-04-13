@@ -721,12 +721,7 @@ transform: none;
   
 }
 
-<<<<<<< HEAD
-/* 
-.arm_assembly_btn:hover
-=======
 /* .arm_assembly_btn:hover
->>>>>>> 73be79606f8d942aad4bc2cdfe4b1a9a1a4aa653
 {
   background-image:       var(--button-gradient-darker), url(./images/cobot1.jpg);
 }
@@ -745,9 +740,6 @@ transform: none;
 .visual_recognition_btn:hover
 {
   background-image:       var(--button-gradient-darker), url(./images/VisualRecognitionFlowchart1.png);
-<<<<<<< HEAD
-} */
-=======
 } */
 
 
@@ -770,4 +762,3 @@ transform: none;
     border-radius: 10px;
 
 }
->>>>>>> 73be79606f8d942aad4bc2cdfe4b1a9a1a4aa653
