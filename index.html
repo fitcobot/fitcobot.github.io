@@ -22,6 +22,13 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
   <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
   <meta property="og:description" content="The webpage for Florida Tech's 2022 COBOT project">
   <meta property="og:image" content="image.png">
+  <meta name="page-type" content="School Project">
+  <meta name="page-topic" content="Education">
+  <meta name='robots' content='index,follow'>
+  <meta name='revised' content='Wednesday, April 13th, 2022, 12:01 pm'>
+  <meta name='Classification' content='Education'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -37,11 +44,12 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
     <div class="container">
       <div id="cobottitle" class="title">COBOT
       </div>
-      <h2>Spring 2022</h2>
-      <div class="section">
-        <small>User-friendly, accessible robot system for assistance in performing everyday tasks.</small>
-      </div>
+      <!-- <h2>Spring 2022</h2> -->
+      <!-- <div class="section">
+        <small>User-friendly, accessible robot system for assistance in performing everyday tasks</small>
+      </div> -->
 
+      
 
       <!-- <div class="box_container">
         <div ><p>BOX</p></div>
@@ -70,7 +78,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <span id="ros2_modal_span" class="close">&times;</span>
           <h1>ROS2</h1>
           <p>The ROS2 system is what controls the COBOT. It is hosted on a Linux laptop that is connected to the COBOT
-            inside of the power box (shown below).</p>
+            inside of the power box. Included below is a system diagram of how the ROS2 system works with the other interfaces.</p>
           <img src="./images/SystemDiagram.png"></img>
           <img src="./images/SystemDiagram2.png"></img>
           <img src="./images/rviz.png"></img>
@@ -83,8 +91,8 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <span id="speech_recognition_modal_span" class="close">&times;</span>
           <div id="speech_recognition" class="contact speech_recognition">
             <h1>Speech Recognition </h1>
-            <p>The COBOT utilizes speech recognition for detecting when a user would like to pick up a can using "" and
-              signalling the ROS2 system to take the appropriate action. </p>
+            <p>The COBOT utilizes the CMUSphynx speech recognition engine for detecting when a user would like to perform a certain task and
+              signalling the ROS2 system to take the appropriate action. Included below is a diagram for the different possible states.</p>
             <img width="50%" src="./images/SpeechRecognitionFlowchart.png"></img>
 
 
@@ -100,6 +108,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
           <h1>EMG</h1>
           <p>The EMG subsystem will make use of an EMG sensor to partially control the COBOT system using one's own
             muscles. </p>
+          <img width="50%" src="./images/jackarm.png"></img>
         </div>
       </div>
 
@@ -132,7 +141,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
 
 
 
-
+      <video style="border-radius: 10px;" width="50%" muted controls autoplay type="video/mp4" src="./images/COBOT_VIDEO.mp4"></video>
       <div class="box_container2">
         <div id="arm_assembly_btn" class="box arm_assembly_btn">
           <div>
@@ -163,6 +172,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>About Us</div></div></div>
         <div style="background-image: url(./images/SpeechRecognitionFlowchart.png);" class="box"><div><div>Contact</div></div></div> -->
       </div>
+      
       <div id="AR3 Arm" class="contact">
 
       </div>
@@ -180,13 +190,13 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
         <h1>EMG</h1>
       </div>   -->
 
-
+      
 
     </div>
     <div class="container">
 
       <div id="about_us" class="about_us_wrapper">
-        <h1>About Us</h1>
+        <h1>Team Members</h1>
         <div class="about_us">
 
 
@@ -388,7 +398,7 @@ import SpeechRecognitionFlowchart from "./images/SpeechRecognitionFlowchart.png"
         <div class="attributions">
           <h1 id="contact">Contact </h1>
           <h3>Attributions</h3>
-          <p>We would like to credit the original developer of the AR3.</p>
+          <p>We would like to credit Chris Annin from Annin Robotics, the original developer of the AR3.</p>
           <p>Annin, Chris (n.d.). Model AR3 Robot Manual. AR Annin Robotics. Retrieved from:
             DOWNLOADS & MANUALS | Annin Robotics
           </p>

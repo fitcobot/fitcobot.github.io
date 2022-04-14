@@ -92,6 +92,11 @@ font-family:  'Montserrat', sans-serif;
 
 }
 
+body
+{
+  margin: 0;
+  padding: 0;
+}
 /* https://stackoverflow.com/questions/38428322/react-component-full-screen-with-height-100/56325816 */
 
 body > #root > div {
@@ -251,9 +256,8 @@ object-fit: fill;
 }
 .horizontal_center_flex{
 flex-direction: column;    
+width: 100%;
 display: flex;
-justify-content: center;
-align-items: center;
 }
 .contract_address_outside
 {
@@ -486,7 +490,7 @@ transform: scale(1);
 {
 position: relative;
 animation: fly-fade-in 1s ease-in;
-font-size: 150px;
+font-size: 20vh;
 }
 
 
@@ -565,9 +569,9 @@ transform: none;
 #cobottitle {
 align-items: center;
 opacity: 0;
-transform: translateY(20%);
+/* transform: translateY(20%);
 transition: opacity 1s ease-in-out,
-            transform 0.5s ease-in-out;
+            transform 0.5s ease-in-out; */
 }
 
 /* Apply this class when #target enters/leaves the viewport */
@@ -693,7 +697,9 @@ transform: none;
 .emg_btn
 {
   background-repeat: no-repeat;
-  background-image:       var(--button-gradient), url(./images/SpeechRecognitionFlowchart.png);
+  /* background-size: contain; */
+  background-position: top;
+  background-image:       var(--button-gradient), url(./images/jackarm.png);
 }
 .visual_recognition_btn
 {
